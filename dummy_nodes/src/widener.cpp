@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
     allowedFormat.endian = esiaf_ros::Endian::LittleEndian;
 
     inputTopicInfo.allowedFormat = allowedFormat;
-    inputTopicInfo.topic = "/input";
+    inputTopicInfo.topic = "/esiaf_ros/segmented";
 
     ros::Publisher gender_pub = n.advertise<esiaf_ros::GenderInfo>("widener/gender", 1, true);
 
