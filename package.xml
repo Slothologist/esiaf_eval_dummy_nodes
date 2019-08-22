@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>esiaf_eval_dummy_nodes</name>
+  <version>0.0.1</version>
+  <description>dummy nodes for evaluation of esiaf framework</description>
+
+  <maintainer email="rfeldh@gmail.com">Robert Feldhans</maintainer>
+  <license>---none---</license>
+  <author>rfeldhans</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>esiaf_ros</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>package</run_depend>
+  <run_depend>esiaf_ros</run_depend>
+
+</package>

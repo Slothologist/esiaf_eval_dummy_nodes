@@ -1,0 +1,3 @@
+<launch>
+    <node name="widener pkg="esiaf_eval_dummy_nodes" type="widener" output="screen" />
+</launch>

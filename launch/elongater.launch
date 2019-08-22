@@ -1,0 +1,3 @@
+<launch>
+    <node name="elongater" pkg="esiaf_eval_dummy_nodes" type="elongater" output="screen" />
+</launch>
