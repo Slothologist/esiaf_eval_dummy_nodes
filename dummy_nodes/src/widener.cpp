@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
 
     // initialise esiaf
     ROS_INFO("starting esiaf initialisation...");
-    esiaf_ros::Esiaf_Handler handler(&n, esiaf_ros::NodeDesignation::Other);
+    esiaf_ros::Esiaf_Handler handler(&n, esiaf_ros::NodeDesignation::Gender);
 
     //create format for input topic
     esiaf_ros::EsiafAudioTopicInfo inputTopicInfo;
@@ -72,9 +72,7 @@ int main(int argc, char *argv[]) {
 
     ROS_INFO("Node ready and rockin'");
 
-    while (ros::ok()) {
-        ros::spinOnce();
-    }
+    ros::spin();
 
     handler.quit_esiaf();
     exit(0);

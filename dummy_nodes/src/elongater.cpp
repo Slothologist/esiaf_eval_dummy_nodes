@@ -73,9 +73,7 @@ int main(int argc, char *argv[]) {
 
     ROS_INFO("Node ready and rockin'");
 
-    while (ros::ok()) {
-        ros::spinOnce();
-    }
+    ros::spin();
 
     handler.quit_esiaf();
     exit(0);
